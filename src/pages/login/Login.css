@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+
+
+body{
+    max-height: 800px;
+    
+}
+
+.form-section{
+    margin: 90px;
+    text-transform: capitalize;
+
+    text-align: center;
+
+padding-bottom: 3%;
+
+
+}
+
+
+
+
+
+
+
+.section-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    padding-bottom: 0px;
+    .container-footer {
+        background-color: rgb(91, 91, 84);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .logo {
+            border-bottom: 2px solid #ffffff;
+        }
+        .redes{
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    display: inline-block;
+                    margin-right: 20px;
+                    a{
+                        color: #ffffff;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+
+                        }
+                    }
+                }
+            }
+        }
+        .info {
+            font-size: 14px;
+        }
+    }
+}
+@media(max-height:668px){
+
+    .section-footer {
+        position: sticky;
+    }
+}
+
+
+form{
+    background-color:rgb(189, 189, 182) ;
+    border-radius: 5px;
+    
+    h2{
+        padding: 25px;
+        text-align: center;
+        padding:1rem;
+    }
+    
+    text-align: center;
+    width: min(300px, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+    .input-container{
+        input[type="text"],[type="email"],[type="password"], input[type="date"],select, textarea{
+            width: 100%;
+            padding: 1.5%;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        label{
+            font-size: 12px;
+        }
+        textarea{
+            resize: vertical;
+        }
+        button[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: rgb(90, 83, 83);
+            color: white;
+            &:hover{
+                background-color: rgb(61, 54, 54);
+            }
+        }
+    }
+}
+
+
+

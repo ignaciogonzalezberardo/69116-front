@@ -1,0 +1,44 @@
+.oreder-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos */
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.item-info {
+    flex: 2; /* Se extiende más en relación a los demás */
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.item-price, .item-subtotal, .item-count, .item-actions {
+    flex: 1; /* Tamaño similar para que se repartan espacio */
+    text-align: center; /* Centra los textos */
+}
+
+.item-count input {
+    width: 50px;
+    text-align: center;
+}
+
+.btn-icon {
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: #d32f2f; /* Color más oscuro en hover */
+}

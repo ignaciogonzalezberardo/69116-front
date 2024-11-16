@@ -1,0 +1,134 @@
+.main-container{
+    a{
+        
+            text-decoration: none; 
+            color: inherit; 
+            cursor: pointer;
+            color: black; 
+    
+    }
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+    .product-section{
+        
+        .container-card{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card{
+                border: 2.5px solid rgb(149, 145, 145);;
+                height: 100%;
+                border-radius: 8px;
+                width: 400px;
+                border: 5px solid transparent;
+                transition: border 0.3s, box-shador 0.3s;
+                margin-bottom: 60px;
+                &:hover{
+                    background-color: rgb(232, 232, 232);
+                    border: 1px solid rgb(149, 145, 145);;
+                    box-shadow: 0px 0px 10px;
+                    .card-body{
+                        visibility: visible !important; 
+                        opacity: 1 !important;
+
+
+                    }
+                    
+                .card-footer{
+                    visibility: visible !important; 
+                    opacity: 1 !important;
+                    margin-top: 0;
+                }
+                }
+                .card-header{
+                    .title-card{
+                        text-align: center;
+                        font-size: 1em;
+                        padding: 10px;
+                        padding-bottom: 5px;
+                        text-transform: capitalize;
+                        border-bottom:2.5px solid #bbbbbb ;
+                    }
+                    img{
+                        height: 400px;
+                        width: 100%;
+                    }
+                }
+
+
+                .card-body{
+                    width: 100%;
+                    background-color:rgb(212, 212, 199) ;
+                    text-align: center;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 0.3s;
+                    .info{
+                        padding: 10px;
+                    }
+                    .precio {
+                        padding-left: 60%;
+                        font-size: 1.5em; 
+                        font-weight: bold; 
+                         
+                        
+                        border-radius: 5px; 
+                        padding-top: 10px; 
+                        padding-bottom: 10px;
+                         
+                        transition: transform 0.3s, color 0.3s; 
+                
+                        &:hover {
+                            transform: scale(1.05); 
+                            
+                        }
+                    }
+                }
+
+                .card-footer{
+                    
+                    width: 100%;
+                    background-color:rgb(212, 212, 199) ;
+                    visibility: hidden;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                
+                    .button-card{
+                       
+                            display: flex;
+                            gap: 10px;
+                    
+                        
+                        button {
+                            border: none;
+                            padding: 15px;
+                            background-color: rgb(149, 145, 145);
+                            border-radius: 5px;
+                            color: white; 
+                            font-weight: bold; 
+                            transition: background-color 0.3s, transform 0.2s; 
+                            cursor: pointer;
+                
+                            &:hover {
+                                background-color: rgb(174, 173, 173);
+                                transform: scale(1.05);
+                            }
+                
+
+                        }
+                    }
+                    .ingreso-card{
+                        padding-top: 15px;
+                        padding-right: 10px;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+}

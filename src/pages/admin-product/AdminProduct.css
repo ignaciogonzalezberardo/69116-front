@@ -1,0 +1,16 @@
+.admin-container {
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    margin: 90px;
+    .form-container {
+        flex: 0 0 360px;
+    }
+
+    @media screen and (width < 1200px) {
+        flex-direction: column;
+        .form-container {
+            order: 1;
+        }
+    }
+}

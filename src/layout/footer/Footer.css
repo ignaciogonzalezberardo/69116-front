@@ -1,0 +1,105 @@
+.section-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    padding-bottom: 0px;
+    background-color: rgb(91, 91, 84);
+    
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        
+        .logo {
+            border-bottom: 2px solid #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .redes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s;
+                    &:hover {
+                        text-decoration: underline;
+                        color: rgb(160, 151, 151);
+                    }
+                }
+            }
+        }
+        
+        .info {
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: left;
+            line-height: 1.5;
+        }
+        
+        .politicas {
+            margin-top: 15px;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 15px;
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                            color: rgb(160, 151, 151);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .suscripcion {
+            margin-top: 20px;
+            input {
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                margin-right: 5px;
+            }
+            button {
+                padding: 8px 12px;
+                background-color: rgb(161, 161, 149);
+                color: #000;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: rgb(189, 173, 173);
+                }
+            }
+        }
+        
+        .agradecimiento {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
+
+
+@media(min-height:1000px){
+    .section-footer {
+        position: fixed;
+    }
+}
